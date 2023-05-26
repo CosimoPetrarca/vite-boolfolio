@@ -16,7 +16,6 @@ export default {
   },
   components: {
     AppHeader,
-    AppMain,
     AppFooter
 
   },
@@ -38,7 +37,7 @@ export default {
 
 <template>
   <AppHeader />
-  <AppMain :data="projects" />
+  <router-view></router-view>
   <AppFooter />
 </template>
 
