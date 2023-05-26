@@ -2,7 +2,7 @@ import { createWebHistory, createRouter } from 'vue-router';
 
 import AppHome from './pages/AppHome.vue';
 import AboutPage from './pages/AboutPage.vue';
-import ProjectPage from './pages/ProjectPage.vue';
+import ListPage from './pages/ListPage.vue';
 
 
 const router = createRouter({
@@ -20,9 +20,9 @@ const router = createRouter({
             component: AboutPage
         },
         {
-            path: '/project',
-            name: 'project',
-            component: ProjectPage
+            path: '/list',
+            name: 'list',
+            component: ListPage
         }
      
     ]
