@@ -3,6 +3,7 @@ import { createWebHistory, createRouter } from 'vue-router';
 import AppHome from './pages/AppHome.vue';
 import AboutPage from './pages/AboutPage.vue';
 import ListPage from './pages/ListPage.vue';
+import ProjectPage from './pages/ProjectPage.vue';
 
 
 const router = createRouter({
@@ -23,6 +24,11 @@ const router = createRouter({
             path: '/list',
             name: 'list',
             component: ListPage
+        },
+        {
+            path: '/list/:slug',
+            name: 'project',
+            component: ProjectPage
         }
      
     ]
