@@ -5,6 +5,7 @@ import AboutPage from './pages/AboutPage.vue';
 import ListPage from './pages/ListPage.vue';
 import ProjectPage from './pages/ProjectPage.vue';
 import TypePage from './pages/TypePage.vue';
+import TechnologyPage from './pages/TechnologyPage.vue';
 
 
 const router = createRouter({
@@ -35,7 +36,12 @@ const router = createRouter({
             path: '/types/:slug',
             name: 'type',
             component: TypePage
-        },     
+        },
+        {
+            path: '/technologies/:slug',
+            name: 'technology',
+            component: TechnologyPage
+        }     
     ]
 });
 
