@@ -2,10 +2,11 @@
 import axios from 'axios';
 import store from '../store';
 export default {
-    name: 'CategoryList',
+    name: 'TypeList',
     data() {
         return {
             store,
+            currentType: '',
             types: []
         }
     },
@@ -19,6 +20,9 @@ export default {
                 .catch((error) => {
                     console.log(error);
                 })
+        },
+        changePage(){
+            this.$router.push({name: 'type', params:{slug: this.currentType}});
         }
     },
     created(){
@@ -28,9 +32,7 @@ export default {
 </script>
 
 <template>
-
-    <select class="form-select" >
-        <option :value="type.slug" v-for="type in types"> {{ type.name }} </option>
+    <select class="form-select" v-if="types.length > 0" @change="changePage" v-model="currentType">
+        <option :value="type.slug" v-for="type in types">{{ type.name }}</option>
     </select>
-
 </template>

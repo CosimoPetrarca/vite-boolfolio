@@ -4,6 +4,7 @@ import AppHome from './pages/AppHome.vue';
 import AboutPage from './pages/AboutPage.vue';
 import ListPage from './pages/ListPage.vue';
 import ProjectPage from './pages/ProjectPage.vue';
+import TypePage from './pages/TypePage.vue';
 
 
 const router = createRouter({
@@ -29,7 +30,12 @@ const router = createRouter({
             path: '/list/:slug',
             name: 'project',
             component: ProjectPage
-        }     
+        },
+        {
+            path: '/types/:slug',
+            name: 'type',
+            component: TypePage
+        },     
     ]
 });
 
