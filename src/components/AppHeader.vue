@@ -1,8 +1,17 @@
+<script>
+import TypeList from './TypeList.vue';
+export default {
+    name: 'AppHeader',
+    components: { TypeList }
+}
+
+</script>
+
 <template>
     <header>
         <div class="container">
             <div class="d-flex justify-content-between">
-                <div class="logo">Project</div>
+                <div class="logo">Boolfolio Logo</div>
                 <nav>
                     <ul class="d-flex list-unstyled m-0 p-0 gap-2">
                         <li>
@@ -20,18 +29,14 @@
                                 Projects
                             </router-link>
                         </li>
+                        <li>
+                            <TypeList />
+                        </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
 </template>
-
-<script>
-export default {
-    name: 'AppHeader'
-}
-
-</script>
 
 <style ></style>

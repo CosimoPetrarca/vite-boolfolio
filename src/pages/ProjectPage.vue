@@ -36,7 +36,7 @@ export default {
 
 <template>
     <section v-if="project">
-        <div class="container">
+        <div class="container text-center">
             <h1 class="mt-5 mb-3">{{ project.title }}</h1>
             <img v-if="project.image" :src="project.image" class="card-img-top">
             <p>{{ project.description }}</p>

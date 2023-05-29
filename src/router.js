@@ -29,8 +29,7 @@ const router = createRouter({
             path: '/list/:slug',
             name: 'project',
             component: ProjectPage
-        }
-     
+        }     
     ]
 });
 
