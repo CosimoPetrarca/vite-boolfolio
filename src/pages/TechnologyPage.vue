@@ -3,7 +3,7 @@ import axios from 'axios';
 import store from '../store';
 import CardProject from '../components/CardProject.vue';
 export default {
-    name: "TechnologyList",
+    name: "TechnologyPage",
     components: {
         CardProject
     },

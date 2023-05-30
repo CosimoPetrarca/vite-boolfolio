@@ -31,6 +31,11 @@ export default {
                             </router-link>
                         </li>
                         <li>
+                            <router-link :to="{ name: 'contact' }" class="nav-link">
+                                Contact
+                            </router-link>
+                        </li>
+                        <li>
                             <TypeList />
                         </li>
                         <li>
